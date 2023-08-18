@@ -1,0 +1,134 @@
+@keyframes SBfadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+.sbexport__fgroup {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+    animation: SBfadeIn .7s ease-in-out;
+}
+
+.sbexport__fgroup:first-child {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.sbexport__dynamicgroup {
+    display: none;
+    animation: SBfadeIn .7s ease-in-out;
+}
+
+.sbexport__dynamicgroup.active {
+    display: block;
+}
+
+.sbexport__exchangegroup {
+    display: none;
+    animation: SBfadeIn .7s ease-in-out;
+}
+
+.sbexport__exchangegroup.active {
+    display: block;
+}
+
+.sbexport__field {
+    margin-bottom: 10px;
+}
+
+.sbexport__fcont {
+    margin-bottom: 30px
+}
+
+.sbexport__label {
+    padding-bottom: 5px;
+}
+
+.sbexport__inp {
+    width: 100%;
+    max-width: 400px;
+}
+
+.sbexport__inp--sm {
+    max-width: 100px;
+}
+
+.sbexport__select--sm {
+    max-width: 100px;
+}
+
+.sbexport__heading {
+    background-color: #e0e8ea;
+    border-top: 11px solid #F5F9F9;
+    border-bottom: 11px solid #F5F9F9;
+    color: #4b6267;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px #fff;
+    padding: 8px 4px 10px;
+}
+
+.sbexport__inlinebtn {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0 0 1px rgb(0 0 0 / 30%), 0 1px 1px rgb(0 0 0 / 30%), inset 0 1px 0 #fff, inset 0 0 1px rgb(255 255 255 / 50%);
+    background-color: #e0e9ec;
+    color: #3f4b54;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    height: 29px;
+    text-shadow: 0 1px rgb(255 255 255 / 70%);
+    text-decoration: none;
+    position: relative;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease-out;
+}
+
+.sbexport__inlinebtn:hover {
+    background-color: #e1f6c8;
+    background-image: none;
+}
+
+.sbexport__delbtn {
+    border: none;
+    background: transparent;
+    color: red;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+    margin-top: 20px;
+}
+
+.sbexport__delbtn:hover {
+    opacity: .7;
+}
+
+.sbloading {
+    opacity: .4;
+}
+
+.sbexport__message {
+    overflow: hidden;
+    height: 0;
+    transition: height .3s ease-in-out;
+}
+
+.sbexport__message.active {
+    height: 40px;
+}
+
+.sbexport__mesinner {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #e1f6c8;
+}
+
+.sbexport__info {
+    opacity: .4;
+}
